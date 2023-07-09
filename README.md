@@ -11,11 +11,12 @@ Chand aims to simplify the process of browsing and analyzing car listings by lev
 - Web interface for users to interact with the trained models and receive predictions.
 
 ## Technologies Used
-- Python
+- Scikit learn
+- TensorFlow
 - Flask
 - MySQL
-- Jupyter Notebook
 - Selenium
+- Jupyter Notebook
 
 ## Installation
 To install and set up Chand on your local machine, follow these steps:

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.rtl.min.css">
+    <title>چند! |سامانه تخمین قیمت خودرو</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+
+    </script>
+    <link rel="icon" type="image/x-png" href="favicon-32x32.png" >
+
+</head>
+<body>
+  <nav class="navbar navbar-light navbarcls" style="background-color: #00587a;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" class="logocls">
+      </a>
+      <a class="navbar-contact" href="mailto:e.bazmandegan@outlook.com">
+        <p href="mailto:e.bazmandegan@outlook.com" class="logocls contact-link mb-0"> تماس</p>
+      </a>
+    </div>
+  </nav>
+  <div class="center-box border rounded">
+        <div class="main_div" >
+
+
+                <div class="login">
+                    <h1></h1>
+                    <form autocomplete="off">
+                        <div class="mb-3">
+                          <input class="form-control model_field fields" type="text" name="model" placeholder="مدل خودرو" required id="model">
+                          <ul class="list-group search_list" id="model-results"></ul>
+                          
+                        </div>
+                        <div class="mb-3">
+                          <select class="form-select dropdown year_field fields" id="year" name="year" required>
+                            <option value="">سال تولید</option>
+                          </select>
+                          
+                        </div>
+                        <div class="mb-3">
+                          <input class="form-control mileage_field fields" type="text" name="mileage" id="mileage" placeholder="کارکرد" required>
+                          
+                        </div>
+                        <div class="mb-3">
+                          <input class="form-control loc_field fields" type="text" name="location" placeholder="موقعیت" required id="location">
+                          
+                        </div>
+                        <button id="predict_button" type="button" class="btn btn-primary btn-block btn-large">تخمین قیمت</button>
+                      </form>
+                      
+                </div>
+                <img src="image.png" class='img-buy' alt="money for car">
+
+
+                
+                <div id='grad' class="answer-div">
+                    <div id="words">
+                        <div id='low-price'class="word left-word invsibile">حد پایین</div>
+                        <div id='suggested-price'class="word middle-word invsibile">پیشنهادی</div>
+                        <div id='high-price' class="word right-word invsibile">حد بالا</div>
+                    </div>
+                    <div id="variable-container" class='prices middle-price'></div>
+                    <div id="variable-container-l" class='prices low-price'></div>
+                    <div id="variable-container-h" class='prices high-price'></div>
+
+                </div>
+        </div>
+      </div>
+        <div class="container faq-cnt">
+          <h1 class="faq-header">سوالات متداول</h1>
+          <div class="faq-box card">
+            <h4 class="faq-question">چند چیست؟</h4>
+            <p class="faq-answer hidden-answer">چند یک پروژه دانشجوییست که با هدف تخمین قیمت روز خودرو ها با توجه به نوسانات بازار طراحی شده.</p>
+          </div>
+          <div class="faq-box card">
+            <h4 class="faq-question">هدف چند چیست؟</h4>
+            <p class="faq-answer hidden-answer">چند پروژه‌ایی مستقل و متن باز است که با هدف ارائه قیمت های تخمینی با کمترین سوگیری ممکن ساخته شده است.</p>
+          </div>
+          <div class="faq-box card">
+            <h4 class="faq-question">چند چگونه کار می‌کند؟</h4>
+            <p class="faq-answer hidden-answer">سیستم چند ابتدا اطلاعات خودرو ها را از سطح وب جمع‌آوری کرده، سپس با کمک الگوریتم های هوش مصنوعی مدلی را آموزش می‌دهد.</p>
+          </div>
+          <div class="faq-box card faq-box-last">
+            <h4 class="faq-question">دقت تخمین قیمت ها چقدر است؟</h4>
+            <p class="faq-answer hidden-answer">مشابه تمام پلتفرم های تخمین قیمت، چند نیز خالی از اشتباه نیست مواردی اعم از داده های غیرواقعی یا ناکافی می‌توانند
+              بر عملکرد چند تاثیر بگذراند، پس نتایج دریافتی از چند تنها یک تخمین است و الزاما نمایانگر قیمت واقعی خودرو ها نیست.
+            </p>
+          </div>      
+        </div>
+      
+        <footer class="footer footercls">
+
+          <div class="container text-center">
+            <p class="footertext">
+              Made with passion by <a href="https://github.com/themightyemad" class="footer-link">Emad</a> © 2023
+            </p>
+          </div>
+        </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>

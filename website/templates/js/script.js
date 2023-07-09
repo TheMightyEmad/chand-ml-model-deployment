@@ -6,6 +6,7 @@ const modelResults = $('#model-results');
     const query = event.target.value;
     if (query.length >= 2) {
     $.ajax({
+      //get the models
         url: `/search?query=${query}`,
         success: (results) => {
             modelResults.empty();
@@ -15,7 +16,7 @@ const modelResults = $('#model-results');
                     modelInput.val(result);
                     modelResults.empty();
                     let selectedModel;
-                    console.log(result)
+                    //get the years
                     selectedModel=result;
                     $.post('/get_years', { selectedModel: selectedModel }, function(response) {
                         $('#year').empty();
@@ -49,7 +50,6 @@ $('input[name="mileage"]').on('input', function() {
 
 
 $('#model').on('change', function() {
-    console.log('1')
     $(this).addClass('disabled-field');
   });
   $('#model').on('click', function() {
@@ -79,8 +79,8 @@ $(document).ready(function() {
         success: function(response) {
             var jsonResponse = JSON.parse(response);
             price=jsonResponse.variable
-            let price_h = price * 105/100
-            let price_l = price * 95/100
+            let price_h = price * 108/100
+            let price_l = price * 92/100
             let formattedNumber = price.toLocaleString();
             let formattedNumber_h = price_h.toLocaleString();
             let formattedNumber_l = price_l.toLocaleString();

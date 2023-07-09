@@ -74,7 +74,7 @@ To run Chand and interact with the web interface, follow these steps:
 - Experiment with hyperparameters and explore different models.
 
 5. Generate model files:
-- Place the `location_dict.joblib` and ML models (with a `.joblib` format) in the `website/models` folder.
+- Place the `location_dict.joblib` and ML models and scalers (with a `.joblib` format) in the `website/models` folder.
 
 6. Run the web interface:
 - Execute the following command in the terminal:
